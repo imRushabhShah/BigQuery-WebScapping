@@ -7,10 +7,11 @@
 ### Web Scrapping 
 1. For web scrapping I have use the help of libraries **urllib.request**, **BeautifulSoup** and **pandas**
 2. I have used all the field in the table which was present in https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population as well as added additional two field which are Mayou name, and city website as they were the field which seems to be have consistent patten of being in infobox of city wikipedia page.
-3. I have hard coded a lot of extraction of colums data but have maintained same style of extraction over all rows. 
-4. I have used pandas to convert out python dictionary formated data into cvs file which we later manually upload to google cloud bigquerry dataset 
+3. I have same colums data show similar pattern in whih that data was present.
+4. I have used pandas to convert out python dictionary formated data into cvs file which we later upload to google cloud bigquerry dataset 
 
 ### Executing BigQuery from python 
 1. Here we install the google.cloud.bigquery library
 2. We keep our API access key in a secured location and reference it to the Client so that we know which bigquery dataset to connect 
-3. We no run our query and get the results for the data
+3. Upload the csv file to the big query
+4. Query the table from the cloud
